@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Orange house</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="/style.css" />
+    
+    
+    
+    
+      <!-- adds images to slide and center title -->
+    <style>
+      .mySlides {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="nav">
+      <a href="index.html">
+        <img
+          src="https://cdn.glitch.com/0baa62d2-9bdc-440b-8416-aa86659a7d4c%2Fhvhs.png?v=1597990076130"
+        />
+      </a>
+    </div>
+
+    <div class="w3-row ">
+      <div class="center">
+        <h1>Orange House (PUKEATUE)</h1>
+      </div>
+      <div class="slideshow ">
+        <img
+          class="mySlides"
+          src="https://cdn.glitch.com/0baa62d2-9bdc-440b-8416-aa86659a7d4c%2Forange1.jpg?v=1596498944948"
+          style="width:100% "
+        />
+
+        <img
+          class="mySlides"
+          src="https://cdn.glitch.com/0baa62d2-9bdc-440b-8416-aa86659a7d4c%2Forange2.jpg?v=1597995939577"
+          style="width:100%"
+        />
+        <img
+          class="mySlides"
+          src="https://cdn.glitch.com/0baa62d2-9bdc-440b-8416-aa86659a7d4c%2Forange3.jpg?v=1597995270672"
+          style="width:100%"
+        />
+        <img
+          class="mySlides"
+          src="https://cdn.glitch.com/0baa62d2-9bdc-440b-8416-aa86659a7d4c%2Flocationorange1.jpg?v=1597995191544"
+          style="width:100%"
+        />
+      </div>
+    </div>
+    <h1>
+      House Captains
+    </h1>
+    <div class="w3-section">
+      <div class="houseCaptainCard">
+        <img
+          src="https://cdn.glitch.com/0baa62d2-9bdc-440b-8416-aa86659a7d4c%2FCapture.PNG?v=1597992030389"
+        />
+        <div class="captainName">
+          Ben
+        </div>
+      </div>
+      <div class="houseCaptainCard">
+        <img
+          src="https://cdn.glitch.com/0baa62d2-9bdc-440b-8416-aa86659a7d4c%2Fgirl.PNG?v=1597992038153"
+        />
+        <div class="captainName">
+          Lulu
+        </div>
+      </div>
+  
+         <!-- Adds the about the house TEXT-->
+    </div>
+    <h1>
+      About the house!
+    </h1>
+
+    <p>
+      We proudly wear the orange of the signal fire. Our maunga is Pukeatua
+      (Hills of the Gods), the range running between Waiwhetu and Wainui-o-mata.
+      History tells of local iwi lighting signal fires on this range, to warn
+      others of approaching danger. This is our kaupapa, working together that
+      we may feel safe and thrive.
+    </p>
+
+    <script>
+      /// to make images go automatic on slideshow
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+    </script>
+  </body>
+</html>

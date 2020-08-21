@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Yellow house</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="/style.css" />
+    
+          <!-- adds images to slide and center title -->
+
+
+    <style>
+      .mySlides {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="nav">
+      <a href="index.html">
+        <img
+          src="https://cdn.glitch.com/0baa62d2-9bdc-440b-8416-aa86659a7d4c%2Fhvhs.png?v=1597990076130"
+        />
+      </a>
+    </div>
+
+    <div class="w3-row ">
+      <div class="center">
+        <h1>Yellow House (MATAIRANGA)</h1>
+      </div>
+      <div class="slideshow ">
+        <img
+          class="mySlides"
+          src="https://cdn.glitch.com/0baa62d2-9bdc-440b-8416-aa86659a7d4c%2Fyellow.jpg?v=1598001322122"
+          style="width:100% "
+        />
+
+        <img
+          class="mySlides"
+          src="https://cdn.glitch.com/0baa62d2-9bdc-440b-8416-aa86659a7d4c%2Fyellow%206.jpg?v=1598001324792"
+          style="width:100%"
+        />
+        <img
+          class="mySlides"
+          src="https://cdn.glitch.com/0baa62d2-9bdc-440b-8416-aa86659a7d4c%2FYellow3.jpg?v=1598001331645"
+          style="width:100%"
+        />
+         <img
+          class="mySlides"
+          src="https://cdn.glitch.com/0baa62d2-9bdc-440b-8416-aa86659a7d4c%2FYellow2.jpg?v=1598001328805"
+          style="width:100%"
+        />
+      </div>
+    </div>
+    <h1>
+      House Captains
+    </h1>
+    <div class="w3-section">
+      <div class="houseCaptainCard">
+        <img
+          src="https://cdn.glitch.com/0baa62d2-9bdc-440b-8416-aa86659a7d4c%2Fyellow1.PNG?v=1598001245858"
+        />
+        <div class="captainName">
+          Jonathon  
+        </div>
+      </div>
+      <div class="houseCaptainCard">
+        <img
+          src="https://cdn.glitch.com/0baa62d2-9bdc-440b-8416-aa86659a7d4c%2Fyellow2.PNG?v=1598001243799"
+        />
+        <div class="captainName">
+          Amelia 
+        </div>
+      </div>
+ 
+           <!-- Adds the about the house TEXT-->
+    </div>
+    <h1>
+      About the house!
+    </h1>
+
+    <p>
+We wear the joyous yellow of the kowhai. Our maunga is Matairangi, the southern peak which can be seen from our school field. This is the point where the bird spirit of the taniwha Whataitai alighted after his death. There it watched over the harbour below and this is our kaupapa, to keep watch over the needs of others, to serve and protect.
+    </p>
+
+    <script>
+      /// to make images go automatic on slideshow
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+    </script>
+  </body>
+</html>

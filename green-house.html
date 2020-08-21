@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Green house</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="/style.css" />
+    
+          <!-- adds images to slide and center title -->
+
+
+    <style>
+      .mySlides {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="nav">
+      <a href="index.html">
+        <img
+          src="https://cdn.glitch.com/0baa62d2-9bdc-440b-8416-aa86659a7d4c%2Fhvhs.png?v=1597990076130"
+        />
+      </a>
+    </div>
+
+    <div class="w3-row ">
+      <div class="center">
+        <h1>Green House(REMTUTAKA)</h1>
+      </div>
+      <div class="slideshow ">
+        <img
+          class="mySlides"
+          src="https://cdn.glitch.com/0baa62d2-9bdc-440b-8416-aa86659a7d4c%2Fgreen3.jpg?v=1598000068125"
+          style="width:100% "
+        />
+
+        <img
+          class="mySlides"
+          src="https://cdn.glitch.com/0baa62d2-9bdc-440b-8416-aa86659a7d4c%2Fgreen4.jpg?v=1598000070659"
+          style="width:100%"
+        />
+        <img
+          class="mySlides"
+          src="https://cdn.glitch.com/0baa62d2-9bdc-440b-8416-aa86659a7d4c%2Fgreen2(resize.jpg?v=1596498953602"
+          style="width:100%"
+        />
+         <img
+          class="mySlides"
+          src="https://cdn.glitch.com/0baa62d2-9bdc-440b-8416-aa86659a7d4c%2Fhvhs%20green.jpg?v=1598000662918"
+          style="width:100%"
+        />
+      </div>
+    </div>
+    <h1>
+      House Captains
+    </h1>
+    <div class="w3-section">
+      <div class="houseCaptainCard">
+        <img
+          src="https://cdn.glitch.com/0baa62d2-9bdc-440b-8416-aa86659a7d4c%2Fgreen23.PNG?v=1598001960238"
+        />
+        <div class="captainName">
+          Millie  
+        </div>
+      </div>
+      <div class="houseCaptainCard">
+        <img
+          src="https://cdn.glitch.com/0baa62d2-9bdc-440b-8416-aa86659a7d4c%2Fgreen232.PNG?v=1598001958982"
+        />
+        <div class="captainName">
+          Tyrone  
+        </div>
+      </div>
+      <!-- Adds the about the house TEXT-->
+    </div>
+    <h1>
+      About the house!
+    </h1>
+
+    <p>
+      We meet beneath the pink of the evening sky, bathing the pohutukawa lined Orongorongo valley in its gentle light. This awa, which runs through the southern Remutaka ranges, is a shapeshifter, one day a gentle trickle, the next a raging torrent. We derive our kaupapa from this image. It is in our diversity that we find our strength. 
+    </p>
+
+    <script>
+      /// to make images go automatic on slideshow
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+    </script>
+  </body>
+</html>
